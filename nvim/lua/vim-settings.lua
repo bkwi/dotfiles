@@ -2,7 +2,7 @@ vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set expandtab")
-vim.cmd("set number")
+-- vim.cmd("set number")
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", {})
@@ -16,8 +16,25 @@ vim.keymap.set("n", "<Left>", "<cmd>:vertical resize -5<cr>", {})
 vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float({ border = 'rounded' })<CR>", {})
 
 vim.diagnostic.config({
-	virtual_text = false,
+    virtual_text = false,
 })
 
 vim.cmd("set background=dark")
--- vim.cmd.colorscheme("gruvbox")
+
+local options = {
+    backup = false,
+    undofile = true,
+    swapfile = false,
+    wrap = false,
+    number = true,
+    -- relativenumber = true,
+    smartindent = true,
+    cursorline = true,
+    hlsearch = true,
+    ignorecase = true,
+    termguicolors = true,
+}
+
+for k, v in pairs(options) do
+    vim.opt[k] = v
+end
