@@ -15,6 +15,7 @@ return {
 					"lua_ls",
 					"pyright",
 					"gopls",
+					"terraformls",
 				},
 			})
 		end,
@@ -27,6 +28,7 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.pyright.setup({})
 			lspconfig.gopls.setup({})
+			lspconfig.terraformls.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
