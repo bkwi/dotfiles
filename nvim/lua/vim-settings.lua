@@ -15,6 +15,13 @@ vim.keymap.set("n", "<Left>", "<cmd>:vertical resize -5<cr>", {})
 
 vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float({ border = 'rounded' })<CR>", {})
 
+vim.keymap.set("n", ",h", "<cmd>split<CR>", {})
+vim.keymap.set("n", ",v", "<cmd>vsplit<CR>", {})
+
+vim.keymap.set("n", ",k", "<cmd>:q!<CR>", {})
+
+
+
 vim.diagnostic.config({
     virtual_text = false,
 })
