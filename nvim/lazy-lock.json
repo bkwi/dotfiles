@@ -1,4 +1,5 @@
 {
+  "bufexplorer": { "branch": "master", "commit": "20f0440948653b5482d555a35a432135ba46a26d" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
   "everforest": { "branch": "master", "commit": "89080db9637bb297b4c75ae1511e9f6f61ad9c78" },
   "gitsigns.nvim": { "branch": "main", "commit": "2c2463dbd82eddd7dbab881c3a62cfbfbe3c67ae" },

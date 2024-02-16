@@ -14,6 +14,7 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"pyright",
+					"tsserver",
 					"gopls",
 					"terraformls",
 				},
@@ -27,6 +28,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			lspconfig.pyright.setup({})
+			lspconfig.tsserver.setup({})
 			lspconfig.gopls.setup({})
 			lspconfig.terraformls.setup({})
 
