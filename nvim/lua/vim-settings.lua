@@ -39,7 +39,7 @@ local options = {
     cursorline = true,
     hlsearch = true,
     ignorecase = true,
-    termguicolors = true,
+    -- termguicolors = true,
 }
 
 for k, v in pairs(options) do
