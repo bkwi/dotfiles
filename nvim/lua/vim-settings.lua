@@ -2,6 +2,8 @@ vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set expandtab")
+vim.cmd("set rnu") -- relativenumber
+-- vim.cmd("set nornu")
 -- vim.cmd("set number")
 vim.g.mapleader = " "
 
@@ -20,7 +22,9 @@ vim.keymap.set("n", ",v", "<cmd>vsplit<CR>", {})
 
 vim.keymap.set("n", ",k", "<cmd>:q!<CR>", {})
 
-
+-- copy to system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to clipboard" })
+vim.keymap.set("n", "<leader>yy", '"+yy', { desc = "Yank line to clipboard" })
 
 vim.diagnostic.config({
     virtual_text = false,
@@ -39,7 +43,7 @@ local options = {
     cursorline = true,
     hlsearch = true,
     ignorecase = true,
-    -- termguicolors = true,
+    termguicolors = true,
 }
 
 for k, v in pairs(options) do

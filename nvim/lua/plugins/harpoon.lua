@@ -30,12 +30,13 @@ return {
                 :find()
         end
 
-        vim.keymap.set("n", "<C-e>", function()
+        -- vim.keymap.set("n", "<C-e>", function()
+        vim.keymap.set("n", "<Leader>hh", function()
             harpoon.ui:toggle_quick_menu(harpoon:list())
         end)
 
         vim.keymap.set("n", "<Leader>ha", function()
-            harpoon:list():append()
+            harpoon:list():add()
         end)
 
         vim.keymap.set("n", "<Leader>hd", function()

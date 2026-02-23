@@ -7,7 +7,9 @@ return {
 			options = {
 				-- theme = "everforest",
 				-- theme = "gruvbox",
-				theme = "gruvbox-material",
+				-- theme = "gruvbox-material",
+				theme = "vague",
+				-- theme = "rose-pine",
 			},
 		})
 	end,

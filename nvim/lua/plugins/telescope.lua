@@ -9,6 +9,8 @@ return {
         vim.keymap.set("n", "<leader>r", builtin.live_grep, {}) -- brew install ripgrep
         vim.keymap.set("n", "<leader>b", builtin.buffers, {})
 
+        vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, { noremap = true, silent = true })
+
         -- default mappings:
         -- <C-n>/<Down>	Next item
         -- <C-p>/<Up>	Previous item

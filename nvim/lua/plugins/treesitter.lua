@@ -9,7 +9,10 @@ return {
             ensure_installed = {
                 "lua",
                 "javascript",
+                "typescript",
+                "css",
                 "html",
+                "svelte",
                 "python",
                 "go",
             },
